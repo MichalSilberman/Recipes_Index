@@ -1,0 +1,6 @@
+<select #selectedMonth (change)="changeStatus(selectedMonth.value)">
+    <option>בחר חודש</option>
+    <option *ngFor="let month of months">{{month.name}}</option>
+    <option>הוסף חודש</option>
+</select>
+<app-create-month *ngIf="createMonth"></app-create-month>

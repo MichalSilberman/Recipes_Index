@@ -1,0 +1,40 @@
+/* background: linear-gradient(326deg, rgba(207, 143, 121, 1) 11%, rgba(241, 187, 183, 1) 38%, rgba(207, 143, 121, 1) 76%); */
+
+/* Reset default styles for select */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  
+  /* Custom styles for select */
+  select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style the arrow icon */
+  select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style for when the select is active/focused */
+  select:focus {
+    border-color: #007bff; /* Change to desired focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Change to desired focus shadow */
+  }
+  

@@ -1,0 +1,15 @@
+<form>
+    <h1>
+        הוספת שם החודש והid לdb </h1>
+  
+    <label>שנה במספר
+        <input type="number" #id [(ngModel)]="year.id" name="Id">
+    </label>
+    <label>שנה באותיות
+        <input name="Name" #name [(ngModel)]="year.name" placeholder="name">
+    </label>
+  <div>{{year.name}}</div>
+  <div>{{year.id}}</div>
+
+    <button type="button" (click)="add(name.value, id.value)">שמור</button>
+  </form>
